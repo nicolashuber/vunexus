@@ -1,0 +1,52 @@
+// Base colors
+
+$white: #fff;
+$black: #000;
+
+// Themes colors
+
+$primary: #6C6DB3;
+$info:    #2793da;
+$success: #62B359;
+$warning: #ffdd57;
+$danger:  #f14668;
+$dark:    #2f2f2f;
+
+$color-schema: (
+  primary: (
+    color: $white,
+    background: $primary
+  ),
+  info: (
+    color: $white,
+    background: $info
+  ),
+  success: (
+    color: $white,
+    background: $success
+  ),
+  warning: (
+    color: darken($warning, 50%),
+    background: $warning
+  ),
+  danger: (
+    color: $white,
+    background: $danger
+  ),
+  dark: (
+    color: $white,
+    background: $dark
+  )
+);
+
+// Sizes
+
+$sizes: (
+  small: .75,
+  default: 1,
+  medium: 1.25,
+  large: 1.5
+);
+
+// Border
+$border-radius: 4px;
