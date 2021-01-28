@@ -3,9 +3,20 @@
   display: block;
   padding: .5rem 1rem;
   font-family: $font-family-primary;
-  font-size: 1rem;
+  font-size: $font-size-base;
+  color: $input-color;
   border: 1px solid $input-border-color;
   border-radius: $border-radius;
+  background-color: $input-bg;
+
+  &[disabled] {
+    cursor: not-allowed;
+    background-color: lighten($input-border-color, 10%);
+
+    &:hover {
+      border-color: $input-border-color;
+    }
+  }
 
   &:hover {
     border-color: darken($input-border-color, 15%);

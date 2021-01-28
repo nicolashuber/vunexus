@@ -1,10 +1,27 @@
 // Fonts
+
 $font-family-primary: 'Barlow', sans-serif;
+$font-size-base:      1rem;
+
+// Font weight
+
+$weight-thin:      100;
+$weight-light:     300;
+$weight-regular:   400;
+$weight-medium:    500;
+$weight-semibold:  600;
+$weight-bold:      700;
+$weight-extrabold: 800;
+$weight-black:     900;
 
 // Base colors
 
 $white: #fff;
 $black: #000;
+
+// Body
+$body-bg:    #f3f3f3;
+$body-color: #363636;
 
 // Themes colors
 
@@ -59,5 +76,7 @@ $border-radius: 4px;
  */
 
 // Input
-$input-border-color: #ccc;
-$input-help-color: #808080;
+$input-bg:           #ffffff;
+$input-color:          $body-color;
+$input-help-color:   #808080;
+$input-border-color: #cccccc;

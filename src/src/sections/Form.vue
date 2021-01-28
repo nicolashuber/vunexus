@@ -29,20 +29,34 @@
         ]"
       />
     </v-field>
+
+    <v-radio v-model="form.option" name="form-option" value="A">Option A</v-radio>
+    <v-radio v-model="form.option" name="form-option" value="B">Option B</v-radio>
+
+    <v-checkbox v-model="form.skills" value="php">PHP</v-checkbox>
+    <v-checkbox v-model="form.skills" value="js">JS</v-checkbox>
+
+    <pre>
+      {{ form }}
+    </pre>
   </div>
 </template>
 
 <script>
 import VField from '@/components/forms/Field.vue'
-import VInput from '@/components/forms/Input.vue'
+import VRadio from '@/components/forms/Radio.vue'
+import VInput from '@/components/forms/Text.vue'
 import VSelect from '@/components/forms/Select.vue'
+import VCheckbox from '@/components/forms/Checkbox.vue'
 import VTextarea from '@/components/forms/Textarea.vue'
 
 export default {
   components: {
     VField,
+    VRadio,
     VInput,
     VSelect,
+    VCheckbox,
     VTextarea
   },
   data () {
@@ -50,6 +64,8 @@ export default {
       form: {
         name: 'Joe Doe',
         skill: null,
+        skills: [],
+        option: null
       },
       sizes: [
         'small',
