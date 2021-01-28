@@ -1,44 +1,23 @@
 <template>
-  <div>
-    <h2>Buttons</h2>
-    <btn v-for="(color, index) in colorSchema" :key="index" :color="color" />
-
-    <h4>Disabled</h4>
-    <btn disabled />
-
-    <h4>Block</h4>
-    <btn block />
-
-    <h4>Sizes</h4>
-    <btn v-for="(size, index) in sizes" :key="index" :size="size" />
+  <div class="container">
+    <Buttons />
+    <Form />
   </div>
 </template>
 
 <script>
-import Btn from './components/Btn.vue'
+import Form from './sections/Form.vue'
+import Buttons from './sections/Buttons.vue'
 
 export default {
   name: 'App',
   components: {
-    Btn
-  },
-  data () {
-    return {
-      sizes: [
-        'small',
-        'default',
-        'medium',
-        'large'
-      ],
-      colorSchema: [
-        'primary',
-        'info',
-        'success',
-        'warning',
-        'danger',
-        'dark'
-      ]
-    }
+    Form,
+    Buttons
   }
 }
 </script>
+
+<style lang="scss">
+@import "@/scss/index.scss";
+</style>

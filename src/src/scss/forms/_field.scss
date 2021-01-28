@@ -1,0 +1,24 @@
+.field {
+  $this: &;
+
+  margin-bottom: 1rem;
+
+  &-label {
+    display: block;
+    margin-bottom: .2rem;
+  }
+
+  &-help {
+    font-size: 70%;
+    margin-top: .25rem;
+    color: $input-help-color;
+  }
+
+  @each $name, $schema in $color-schema {
+    &.is-#{$name} {
+      #{$this}-help {
+        color: map-get($schema, 'background');
+      }
+    }
+  }
+}

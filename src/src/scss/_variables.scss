@@ -1,3 +1,6 @@
+// Fonts
+$font-family-primary: 'Barlow', sans-serif;
+
 // Base colors
 
 $white: #fff;
@@ -50,3 +53,11 @@ $sizes: (
 
 // Border
 $border-radius: 4px;
+
+/**
+ * COMPONENTS
+ */
+
+// Input
+$input-border-color: #ccc;
+$input-help-color: #808080;
